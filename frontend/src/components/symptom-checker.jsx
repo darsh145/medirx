@@ -1,9 +1,9 @@
 "use client";
 
 import { useState } from "react";
-import { Button } from "@nextui-org/react";
+import { Button, CardBody } from "@nextui-org/react";
 import { Input } from "@nextui-org/react";
-import { Card, CardHeader, CardTitle, CardContent, CardFooter } from "@nextui-org/react";
+import { Card, CardHeader, CardFooter} from "@nextui-org/react";
 
 
 export default function SymptomChecker() {
@@ -33,9 +33,9 @@ export default function SymptomChecker() {
         <h2 className="text-3xl font-bold mb-8 text-center">Symptom Checker</h2>
         <Card className="max-w-2xl mx-auto">
           <CardHeader>
-            <CardTitle>Enter your symptoms</CardTitle>
+            <CardHeader>Enter your symptoms</CardHeader>
           </CardHeader>
-          <CardContent>
+          <CardBody>
             <div className="flex mb-4">
               <Input
                 type="text"
@@ -44,7 +44,7 @@ export default function SymptomChecker() {
                 onChange={(e) => setCurrentSymptom(e.target.value)}
                 className="flex-grow mr-2"
               />
-              <Button onClick={addSymptom}>Add</Button>
+              <Button onPress={addSymptom}>Add</Button>
             </div>
             <div className="mb-4">
               {symptoms.map((symptom, index) => (
@@ -56,10 +56,10 @@ export default function SymptomChecker() {
                 </span>
               ))}
             </div>
-            <Button onClick={checkSymptoms} className="w-full">
+            <Button onPress={checkSymptoms} className="w-full">
               Get Suggestions
             </Button>
-          </CardContent>
+          </CardBody>
           <CardFooter>
             <div>
               {suggestions.length > 0 && (

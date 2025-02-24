@@ -1,9 +1,13 @@
 "use client";
 
 import { useState } from "react";
-import { Button, CardContent } from "@nextui-org/react";
+import { Button } from "@nextui-org/react";
 import { Textarea } from "@nextui-org/react";
-import { Card, CardHeader, CardTitle } from "@nextui-org/react";
+import {
+  Card,
+  CardHeader,
+  CardBody,
+} from "@nextui-org/react";
 
 export default function PrescriptionManager() {
   const [prescriptions, setPrescriptions] = useState([]);
@@ -24,16 +28,16 @@ export default function PrescriptionManager() {
         </h2>
         <Card className="max-w-2xl mx-auto">
           <CardHeader>
-            <CardTitle>Add New Prescription</CardTitle>
+            <CardHeader>Add New Prescription</CardHeader>
           </CardHeader>
-          <CardContent>
+          <CardBody>
             <Textarea
               placeholder="Enter prescription details"
               value={newPrescription}
               onChange={(e) => setNewPrescription(e.target.value)}
               className="mb-4"
             />
-            <Button onClick={addPrescription} className="w-full">
+            <Button onPress={addPrescription} className="w-full">
               Add Prescription
             </Button>
             <div className="mt-6">
@@ -48,7 +52,7 @@ export default function PrescriptionManager() {
                 <p>No prescriptions added yet.</p>
               )}
             </div>
-          </CardContent>
+          </CardBody>
         </Card>
       </div>
     </section>

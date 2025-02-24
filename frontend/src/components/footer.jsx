@@ -1,4 +1,4 @@
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -15,9 +15,9 @@ export default function Footer() {
             <h4 className="text-lg font-semibold mb-2">Quick Links</h4>
             <ul className="text-sm">
               <li>
-                <a to="#" className="hover:text-primary">
+                <Link to="#" className="hover:text-primary">
                   About Us
-                </a>
+                </Link>
               </li>
               <li>
                 <a to="#" className="hover:text-primary">

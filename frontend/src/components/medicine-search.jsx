@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { Button } from "@nextui-org/react";
 import { Input } from "@nextui-org/react";
-import { Card, CardHeader, CardTitle, CardContent } from "@nextui-org/react";
+import { Card, CardHeader, CardBody } from "@nextui-org/react";
 
 export default function MedicineSearch() {
   const [searchTerm, setSearchTerm] = useState("");
@@ -27,9 +27,9 @@ export default function MedicineSearch() {
         </h2>
         <Card className="max-w-2xl mx-auto">
           <CardHeader>
-            <CardTitle>Search for Medicines</CardTitle>
+            Search for Medicines
           </CardHeader>
-          <CardContent>
+          <CardBody>
             <div className="flex mb-4">
               <Input
                 type="text"
@@ -38,7 +38,7 @@ export default function MedicineSearch() {
                 onChange={(e) => setSearchTerm(e.target.value)}
                 className="flex-grow mr-2"
               />
-              <Button onClick={searchMedicines}>Search</Button>
+              <Button onPress={searchMedicines}>Search</Button>
             </div>
             {searchResults.length > 0 && (
               <div>
@@ -63,7 +63,7 @@ export default function MedicineSearch() {
                 </ul>
               </div>
             )}
-          </CardContent>
+          </CardBody>
         </Card>
       </div>
     </section>
