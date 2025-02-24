@@ -1,9 +1,9 @@
 "use client";
 
 import { useState } from "react";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
+import { Button } from "@nextui-org/react";
+import { Input } from "@nextui-org/react";
+import { Card, CardHeader, CardTitle, CardContent } from "@nextui-org/react";
 
 export default function MedicineSearch() {
   const [searchTerm, setSearchTerm] = useState("");

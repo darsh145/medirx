@@ -1,15 +1,10 @@
 "use client";
 
 import { useState } from "react";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import {
-  Card,
-  CardHeader,
-  CardTitle,
-  CardContent,
-  CardFooter,
-} from "@/components/ui/card";
+import { Button } from "@nextui-org/react";
+import { Input } from "@nextui-org/react";
+import { Card, CardHeader, CardTitle, CardContent, CardFooter } from "@nextui-org/react";
+
 
 export default function SymptomChecker() {
   const [symptoms, setSymptoms] = useState([]);

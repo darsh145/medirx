@@ -1,10 +1,10 @@
 import './App.css'
-import Header from "../components/header";
-import Hero from "../components/hero";
-import SymptomChecker from "../components/symptom-checker";
-import PrescriptionManager from "../components/prescription-manager";
-import MedicineSearch from "../components/medicine-search";
-import Footer from "../components/footer";
+import Header from "./components/header";
+import Hero from "./components/hero";
+import SymptomChecker from "./components/symptom-checker";
+import PrescriptionManager from "./components/prescription-manager";
+import MedicineSearch from "./components/medicine-search";
+import Footer from "./components/footer";
 
 function App() {
 

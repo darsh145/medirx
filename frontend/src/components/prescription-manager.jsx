@@ -1,9 +1,9 @@
 "use client";
 
 import { useState } from "react";
-import { Button } from "@/components/ui/button";
-import { Textarea } from "@/components/ui/textarea";
-import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
+import { Button, CardContent } from "@nextui-org/react";
+import { Textarea } from "@nextui-org/react";
+import { Card, CardHeader, CardTitle } from "@nextui-org/react";
 
 export default function PrescriptionManager() {
   const [prescriptions, setPrescriptions] = useState([]);
